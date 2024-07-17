@@ -1,0 +1,41 @@
+/* styles.css */
+.loginButton {
+    border: none;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(-25deg, #e0470b, #fcf525);
+    font-weight: bold;
+
+}
+
+.loginButton:hover {
+    background: linear-gradient(25deg, #e0470b, #fcf525);
+}
+
+
+.logoutButton {
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
+    font-weight: bold;
+
+}
+
+.logoutButton:hover {
+    background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
+}
+

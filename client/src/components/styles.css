@@ -1,41 +1,87 @@
-/* styles.css */
-.loginButton {
-    border: none;
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-    background: linear-gradient(-25deg, #e0470b, #fcf525);
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+.loginButton {
+  border: none;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #332357,#532384, #4666BE);
+  font-weight: bold;
+  color: white;
 }
 
 .loginButton:hover {
-    background: linear-gradient(25deg, #e0470b, #fcf525);
+  background: linear-gradient(25deg, #332357,#532384, #4666BE);
+  color: #FFD25C;
 }
 
-
 .logoutButton {
-    border: none;
-    color: white;
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-    background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
-    font-weight: bold;
-
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
+  font-weight: bold;
 }
 
 .logoutButton:hover {
-    background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
+  background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
 }
 
+.gridlog_logo {
+  position: absolute;
+  left: 10px;
+  width: 10em;
+  height: auto;
+  padding-left: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #e3e0e0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    padding-right: 30px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #332357;
+  }
+
+  .heart-emoji {
+    font-size: 20px;
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  .logo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

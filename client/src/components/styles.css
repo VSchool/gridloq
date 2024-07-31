@@ -1,102 +1,44 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 body {
   margin: .5em;
 }
 .loginButton {
-    border: none;
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-    background: linear-gradient(-25deg, #e0470b, #fcf525);
-    font-weight: bold;
-
+  border: none;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #332357,#532384, #4666BE);
+  font-weight: bold;
+  color: white;
 }
 .loginButton:hover {
-    background: linear-gradient(25deg, #e0470b, #fcf525);
+  background: linear-gradient(25deg, #332357,#532384, #4666BE);
+  color: #FFD25C;
 }
 .logoutButton {
-    border: none;
-    color: white;
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-    background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
-    font-weight: bold;
-
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
+  font-weight: bold;
 }
 .logoutButton:hover {
-    background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
-}
-
-/* Tiles Styling  */
-.tile {
-  aspect-ratio: 1 / 1;
-  height: 110px;
-  padding: 0 10px;
-  text-align: center;
-  margin: 20px;
-  border-radius: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-.tile-main {
-  display: inline;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} 
-  .large-indicator {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    font-size: 5.5em;
-    padding-bottom: .2em;
-  } 
-  .small-indicator {
-    grid-column: 2 / 4;
-    grid-row: 2 / 4;
-    font-size: 2.5em;
-    padding-bottom: .4em;
-  }
-.tile-top {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  font-size: 1.2em;
-  padding: 0;
-  text-align: left; 
-}
-.tile-img {
-  /* needs to be figured out */
-}  
-.orangeGradient-background {
-  background: #FFD25C;
-  box-shadow: 0px 0px 32px 4px #0000002E inset;
-  color: #332357;
-}
-.orangeGradient-background:hover{
-  background: linear-gradient(326.51deg, #BA261E 11.66%, #E1691B 29.71%, #F3F57F 83.48%);
-  box-shadow: 0px 0px 32px 4px #0000002E inset;
-}
-.greenGradient-background {
-  background: var(--lime, #F3F57F);
-  box-shadow: 0px 0px 32px 4px #0000002E inset;
-  color: #332357;
-}
-.greenGradient-background:hover {
-  background: linear-gradient(328.36deg, #71B937 17.69%, #F3F57F 65.79%);
-  box-shadow: 0px 4px 14px 0px #00000024;
+  background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
 }

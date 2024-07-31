@@ -8,6 +8,21 @@ export default function Tile(props){
  * worth = how much the tile is worth (1 - 4 currently) 
  * bottom = is there something on bottom right
 */
+ {/* template tiles */}
+// <Tile 
+//  background={"orangeGradient-background"} 
+//  indicator={"none"} 
+//  sections={1} 
+//  worth={1} 
+//  bottom={"none"} 
+// />
+// <Tile 
+//  background={'greenGradient-background'}
+//  indicator={"X"} 
+//  sections={2} 
+//  worth={2} 
+//  bottom={"none"} 
+// />
   const {background, indicator, sections, worth, bottom} = props
 
   return(

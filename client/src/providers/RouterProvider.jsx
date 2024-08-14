@@ -7,6 +7,7 @@ import { Root } from "../routes/Root";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Home } from "../routes/Home";
 import { Socket } from "../routes/Socket";
+import { HowToPlay } from "../routes/HowToPlay";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/socket',
         element: <Socket />
+      },
+      {
+        path: '/howtoplay',
+        element: <HowToPlay />
       }
     ]
   },

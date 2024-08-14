@@ -31,7 +31,7 @@ export const Navbar = () => {
         <>
             <img src={logo} className="gridlog_logo" alt="Gridloq Logo"/>
             <Link to='/' className="nav-link">Home</Link>
-            <Link to='/' className="nav-link">How to Play</Link>
+            <Link to='/howtoplay' className="nav-link">How to Play</Link>
             <Link to='/' className="nav-link">Leaderboard</Link>
             <span className="heart-emoji">💙</span>
             <button className="loginButton" onClick={handleLogin}> <FontAwesomeIcon icon={faUserCircle} /> Login</button>

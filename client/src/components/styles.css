@@ -60,13 +60,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-} 
+}
   .large-indicator {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     font-size: 5.5em;
     padding-bottom: .2em;
-  } 
+  }
   .small-indicator {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
@@ -78,11 +78,11 @@ body {
   grid-row: 1 / 2;
   font-size: 1.2em;
   padding: 0;
-  text-align: left; 
+  text-align: left;
 }
 .tile-img {
   /* needs to be figured out */
-}  
+}
 .orangeGradient-background {
   background: #FFD25C;
   box-shadow: 0px 0px 32px 4px #0000002E inset;
@@ -101,3 +101,76 @@ body {
   background: linear-gradient(328.36deg, #71B937 17.69%, #F3F57F 65.79%);
   box-shadow: 0px 4px 14px 0px #00000024;
 }
+/* Start game comp  */
+.start-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 448px;
+  height: 256px;
+  border-radius: 16px;
+  border: 1px;
+  border-color: linear-gradient(-25deg, #332357, #532384, #4666BE);
+  font-family: "Poppins", sans-serif;
+}
+.start-game-text {
+  justify-self: start;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(-25deg, #332357, #532384, #4666BE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.start-game-buttons-icons {
+  display: grid;
+  width: 402px;
+  justify-content: center;
+  margin-left: 23px;
+}
+.play-computer-icon {
+  height: 48px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: center;
+  padding: 8px;
+}
+.play-online-icon {
+  height: 48px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+  padding: 8px;
+}
+.play-computer-button {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: center;
+  background: linear-gradient(-25deg, #332357, #532384, #4666BE);
+  border-radius: 50px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  height: 50px;
+}
+.play-online-button {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  background: linear-gradient(-25deg, #332357, #532384, #4666BE);
+  border-radius: 50px;
+  margin-left: 16px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  height: 50px;
+}
+
+

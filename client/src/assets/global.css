@@ -3,67 +3,105 @@
 }
 
 /* How to Play  */
-.howToPlay {  
+.howToPlay {
+  color: #332357;  
   margin: 1em 5em;
-  color: #332357;
 }
 .howToPlay > header {
-  border-bottom: 1px solid #D9D9D9;
   display: inline-block;
-  font-family: Poppins;
-  font-size: 1.1em;
-  font-weight: 400;
-  line-height: 1.62em;
   text-align: left;
+  font: 400 1.1em "Poppins";
+  line-height: 1.62em;
   margin-bottom: 1.5em;
+  border-bottom: .05em solid #D9D9D9;
 }
 .pageContent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+    /* main */
 .mainInstructionsContainer {
   padding: .4em 0;
-  
+  min-width: 30.6em;
 }
-.containerHeader {
-  font-family: Montserrat;
-  font-size: 1.2em;
-  font-weight: 900;
+h3 {
+  font: 900 1.2em "Montserrat";
   line-height: 1.5em;
-  text-align: left;
+  padding-bottom: .5em;
 }
 .mainOl {
   padding: 0 1.5em;
 }
-.mainLi {
-  font-family: Poppins;
-  font-size: 1em;
-  font-weight: 400;
+.mainOl > li {
+  font: 400 1em "Poppins";
   line-height: 1.5em;
+  padding: .5em 0;
+  width: 100%;
 }
 .mainButton {
-  font-family: Poppins;
-  font-size: 1.2em;
-  font-weight: 700;
+  background: linear-gradient(328.36deg, #332357 17.69%, #532384 33.32%, #4666BE 65.79%);
+  color: #ffffff; 
+  font: 700 1.2em "Poppins";
   line-height: 2.8em;
   text-align: center;
-  color: #ffffff; 
-  background: linear-gradient(328.36deg, #332357 17.69%, #532384 33.32%, #4666BE 65.79%);
+  margin-top: 2em;
+  border-radius: 1.6em;
+  width: 95%;
+  height: 3.25em;
 }
-.asidePowerupContainer {
+    /* power up aside */
+.powerUpAside {
   background: var(--lime, #F3F57F); 
   padding: .4em 1em;
+  margin-bottom: 1.2em;
+  border-radius: .4em;
 }
-.asideDescription {
-  font-family: Poppins;
-  font-size: 1em;
-  font-weight: 400;
+.powerUpAside > p {
+  font: 400 1em "Poppins";
   line-height: 1.5em;
   text-align: left;
 }
-
-.asideSubscriptionContainer {
+.powerUpAside > div {
+  display: flex;
+  align-items: center;
+  font: 400 .8em "Poppins";
+  line-height: 1.5em;
+}
+.icon {
+  margin: .5em;
+  width: 3em;
+  height: 3em;
+}
+.icon > img {
+  width: inherit;
+  height: inherit;
+}
+.powerUpTitle {
+  font-weight: 600;
+}
+    /* subscription aside */
+.subscriptionAside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(328.36deg, #332357 17.69%, #532384 33.32%, #4666BE 65.79%);
   color: #FFFFFF;
-  ;
+  padding: 1.5em;
+  border-radius: .4em;
+}
+.subscriptionAside > p {
+  font: 400 1.1em "Poppins";
+  text-align: left;
+  width: 100%;
+}
+.subscriptionAside > button {
+  background: linear-gradient(328.36deg, #71B937 17.69%, #F3F57F 65.79%);
+  color: #332357;
+  font: 700 1.2em "Poppins";
+  line-height: 1.3em;
+  text-align: center; 
+  padding: 1.2em auto;
+  border-radius: 1.6em; 
+  width: 28.2em;
+  height: 3.25em;
 }

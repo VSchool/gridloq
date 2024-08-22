@@ -1,5 +1,4 @@
 import React from 'react';
-import './Grid.css';
 import bomb from "../components/Images/icons/powerUps/bombPowerUp.png"
 import steal from "../components/Images/icons/powerUps/stealPowerUp.png"
 import twox from "../components/Images/icons/powerUps/2XPowerUp.png"

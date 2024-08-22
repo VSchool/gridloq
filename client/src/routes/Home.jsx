@@ -1,5 +1,4 @@
 import React from 'react';
-import './Grid.css';
 
 export const Home = () => {
   const Grid = ({ size }) => {

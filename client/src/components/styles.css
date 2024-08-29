@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: .5em;
+}
+.loginButton {
+  border: none;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #332357,#532384, #4666BE);
+  font-weight: bold;
+  color: white;
+}
+.loginButton:hover {
+  background: linear-gradient(25deg, #332357,#532384, #4666BE);
+  color: #FFD25C;
+}
+.logoutButton {
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
+  font-weight: bold;
+}
+.logoutButton:hover {
+  background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
+}
+
+/* Tiles Styling  */
+.tile {
+  aspect-ratio: 1 / 1;
+  height: 110px;
+  padding: 0 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.tile-main {
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  .large-indicator {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    font-size: 5.5em;
+    padding-bottom: .2em;
+  }
+  .small-indicator {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    font-size: 2.5em;
+    padding-bottom: .4em;
+  }
+.tile-top {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 1.2em;
+  padding: 0;
+  text-align: left;
+}
+.tile-img {
+  /* needs to be figured out */
+}
+.orangeGradient-background {
+  background: #FFD25C;
+  box-shadow: 0px 0px 32px 4px #0000002E inset;
+  color: #332357;
+}
+.orangeGradient-background:hover{
+  background: linear-gradient(326.51deg, #BA261E 11.66%, #E1691B 29.71%, #F3F57F 83.48%);
+  box-shadow: 0px 0px 32px 4px #0000002E inset;
+}
+.greenGradient-background {
+  background: var(--lime, #F3F57F);
+  box-shadow: 0px 0px 32px 4px #0000002E inset;
+  color: #332357;
+}
+.greenGradient-background:hover {
+  background: linear-gradient(328.36deg, #71B937 17.69%, #F3F57F 65.79%);
+  box-shadow: 0px 4px 14px 0px #00000024;
+}
+/* friends styling */
+.invite-friends {
+  width: 612px;
+  height: 772px;
+  background-image: linear-gradient(180deg, #00C2FF -18.05%, #FFFFFF 44.84%);
+  border-radius: 24px;
+  font-family: Poppins;
+  margin: 0;
+}
+.friends-top-half {
+  width: 566px;
+  height: 242px;
+  padding: 16px;
+}
+.friends-text {
+  width: 155px;
+  height: 60px;
+  font-size:40px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(-25deg, #332357, #532384, #4666BE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: auto;
+  margin-right: auto;
+}
+.select-friends-text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #332357;
+}
+.google-contacts-text {
+  font-size: 22px;
+  font-weight: 400;
+  color:#332357;
+}
+.friends-send-message-icon {
+  width: 48px;
+  height: 48px;
+}
+.send-invite-text-and-icon {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  width: 566px;
+  height: 80px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #332357;
+}
+.friends-bottom-half {
+  width: 566px;
+  height: 359px;
+}
+.friends-name-email-text {
+  width: 566px;
+  height: 31px;
+  display: flex;
+  color: #332357;
+  font-size: 22px;
+  font-weight: 400;
+  justify-content: space-between;
+}
+.friends-name-text {
+  margin-left: 89px;
+}
+.friends-email-text {
+  margin-right: 20px;
+}
+.friends-user-name-email-icons {
+  width: 566px;
+  height: 64px;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  filter: drop-shadow( #b4b4b4 0rem 0rem 4px)
+}
+.checkbox {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  margin-top: auto;
+  margin-bottom: auto;
+  filter: drop-shadow( #b4b4b4 0rem 0rem 4px);
+}
+.handshake-icon {
+  width: 48px;
+  height: 48px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.friends-user-name {
+  color: #332357;
+  font-size: 16px;
+  font-weight: 400;
+}
+.friends-user-email {
+  color: #332357;
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +9,92 @@
 }
 body {
   margin: .5em;
+}
+
+/* navbar */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 4em;
+}
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 7.75em;
+  height: 2.9em;
+}
+.logoImage {
+  width: 7.75em;
+  height: 2.25em;
+  margin: 0;
+  padding: 0;  
+}
+.logoText {
+  font: 500 .5em "Roboto Condensed", sans-serif;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLinks {
+  color: #332357;
+  font: 500 1.1em "Poppins";
+  text-decoration: none;
+  padding: 0 1em;
+}
+.navIcon {
+  padding: 0 .5em;
+}
+.navIcon > img {
+  width: 1.2em;
+}
+.loginButton {
+  border: none;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(-25deg, #332357,#532384, #4666BE);
+  font-weight: bold;
+  color: white;
+}
+.loginButton:hover {
+  background: linear-gradient(25deg, #332357,#532384, #4666BE);
+  color: #FFD25C;
+}
+.logoutButton {
+  display: flex;
+  background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
+  color: white;
+  font: 500 1.1em "Poppins";
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2px 2px;
+  padding: .4em 1.5em;
+  border-radius: 50px;
+  border: none;
+}
+.logoutButton:hover {
+  background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
+}
+.avatar {
+  padding-top: .15em;
+  border-radius: 1em;
+  width: 1.2em;
+}
+.logoutButton > span {
+  padding-left: .4em;
 }
 
 /* How to Play  */
@@ -199,43 +285,6 @@ h1 {
   margin: 4px;
   background-color: #FFD25C;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* login */
-.loginButton {
-  border: none;
-  padding: 8px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
-  border-radius: 50px;
-  background: linear-gradient(-25deg, #332357,#532384, #4666BE);
-  font-weight: bold;
-  color: white;
-}
-.loginButton:hover {
-  background: linear-gradient(25deg, #332357,#532384, #4666BE);
-  color: #FFD25C;
-}
-.logoutButton {
-  border: none;
-  color: white;
-  padding: 8px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
-  border-radius: 50px;
-  background: linear-gradient(-25deg, #27054b, #8947d0, #518aee, #0845ae);
-  font-weight: bold;
-}
-.logoutButton:hover {
-  background: linear-gradient(25deg, #27054b, #8947d0, #518aee, #0845ae);
 }
 
 /* Tiles Styling  */

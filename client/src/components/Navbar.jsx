@@ -4,44 +4,65 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import logo from './Images/Gridloq_Logo.png';
+import heart from './Images/icons/heart.png'
+import cart from './Images/icons/cart.png';
 
 export const Navbar = () => {
-    const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
-    const handleLogin = () => loginWithRedirect({
-        authorizationParams: {
+  const handleLogin = () => loginWithRedirect({
+    authorizationParams: {
             redirect_uri: window.location.origin + '/profile'
-        }
-    });
+    }
+  });
 
-    const handleLogout = () => {
-        logout();
-    };
+  const handleLogout = () => {
+    logout();
+  };
 
-    const links = isAuthenticated ?
-        <>
-            <img src={logo} className="gridlog_logo" alt="Gridloq Logo"/>
-            <Link to='/'>Home</Link>
-            <Link to='/profile'>Profile</Link>
-            <Link to='/socket'>Socket</Link>
-            <span className="heart-emoji">💙</span>
-            <button className="logoutButton" onClick={handleLogout}> <FontAwesomeIcon icon={faSignOutAlt} /> Logout</button>
-        </> :
-        <>
-            <img src={logo} className="gridlog_logo" alt="Gridloq Logo"/>
-            <Link to='/' className="nav-link">Home</Link>
-            <Link to='/howtoplay' className="nav-link">How to Play</Link>
-            <Link to='/' className="nav-link">Leaderboard</Link>
-            <span className="heart-emoji">💙</span>
-            <button className="loginButton" onClick={handleLogin}> <FontAwesomeIcon icon={faUserCircle} /> Login</button>
-        </>;
+  const links =
+   isAuthenticated ?
+    <div className="navContainer">
+      <div className="logoContainer">
+        <img src={logo} className="logoImage" alt="Gridloq Logo"/>
+        <p className="logoText">tic-tac-toe challenge</p>
+      </div>
+      <div className="linksContainer">
+        <Link to='/' className="navLinks">Home</Link>
+        <Link to='/howtoplay' className="navLinks">How to Play</Link>
+        <Link to='/' className="navLinks">Leaderboard</Link>
+        <Link to='/profile' className="navLinks">Friends</Link>
+        <span className="navIcon">
+            <img src={heart} alt="heart"/>
+        </span>
+        <span className="navIcon">
+            <img src={cart} alt="cart"/>
+        </span>
+        <button className="logoutButton" onClick={handleLogout}> <img src={user.picture} alt="avatar" className="avatar" /><span>Hello, {user.name}</span></button>
+      </div>
+    </div>
+     :
+    <div className="navContainer">
+      <div className="logoContainer">
+        <img src={logo} className="logoImage" alt="Gridloq Logo"/>
+        <p className="logoText">tic-tac-toe challenge</p>
+      </div>
+      <div className="linksContainer">
+        <Link to='/' className="navLinks">Home</Link>
+        <Link to='/howtoplay' className="navLinks">How to Play</Link>
+        <Link to='/' className="navLinks">Leaderboard</Link>
+        <span className="navIcon">
+            <img src={heart} alt="heart"/>
+        </span>
+        <button className="loginButton" onClick={handleLogin}> <FontAwesomeIcon icon={faUserCircle} /> Login</button>
+      </div>
+    </div>;
 
-    return (
-        <nav className="navbar">
-            <div className="nav-links">
-                {links}
-            </div>
-            {isAuthenticated && <img src={user.picture} alt="avatar" width={32} height={32} />}
-        </nav>
-    );
+  return (
+    <nav className="navbar">
+      <div className="nav-links">
+        {links}
+      </div>
+    </nav>
+  );
 };
